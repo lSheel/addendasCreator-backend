@@ -1,0 +1,44 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "imports": {
+    "#root/*": "./dist/*",
+    "#utils/*": "./dist/utils/*",
+    "#controllers/*": "./dist/controllers/*",
+    "#services/*": "./dist/services/*",
+    "#routes/*": "./dist/routes/*"
+  },
+  "scripts": {
+    "dev": "tsx watch src/app.ts",
+    "build": "tsc",
+    "start": "node dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^7.1.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "fast-xml-parser": "^5.3.2",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/multer": "^2.0.0",
+    "@types/node": "^24.10.2",
+    "prisma": "^7.1.0",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
