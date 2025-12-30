@@ -8,7 +8,8 @@
     "#utils/*": "./dist/utils/*",
     "#controllers/*": "./dist/controllers/*",
     "#services/*": "./dist/services/*",
-    "#routes/*": "./dist/routes/*"
+    "#routes/*": "./dist/routes/*",
+    "#interfaces/*": "./dist/interfaces/*"
   },
   "scripts": {
     "dev": "tsx watch src/app.ts",
@@ -21,13 +22,15 @@
   "type": "module",
   "dependencies": {
     "@prisma/client": "^7.1.0",
+    "@types/xml2js": "^0.4.14",
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "fast-xml-parser": "^5.3.2",
     "jsonwebtoken": "^9.0.3",
-    "multer": "^2.0.2"
+    "multer": "^2.0.2",
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",

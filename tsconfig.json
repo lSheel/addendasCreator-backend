@@ -9,7 +9,7 @@
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
-    "types": ["node", ],
+    "types": ["node", "express", "xml2js", "multer", "jsonwebtoken", "cors", "dotenv", "bcryptjs"],
     // For nodejs:
     "lib": ["esnext"],
     "skipDefaultLibCheck": true,
@@ -34,9 +34,10 @@
     "paths": {
       "#root/*": ["./src/*"],
       "#utils/*": ["./src/utils/*"],
-      "controllers/*": ["./src/controllers/*"],
-      "services/*": ["./src/services/*"],
-      "routes/*": ["./src/routes/*"]
+      "#controllers/*": ["./src/controllers/*"],
+      "#services/*": ["./src/services/*"],
+      "#routes/*": ["./src/routes/*"],
+      "#interfaces/*": ["./src/interfaces/*"]
     },
 
     // Style Options

@@ -24,12 +24,12 @@ model User {
 model Invoice {
   id             Int      @id @default(autoincrement())
   fileName       String
-  uuid           String?  // UUID del CFDI
+  uuid           String?  @unique// UUID del CFDI
 
   xmlContent     String   @db.Text // El XML original
   addendaContent String?  @db.Text // El resultado generado
 
-  clientName     String   
+  inputData        Json?    @db.JsonB // Datos de entrada para la addenda
 
   totalAmount    Decimal  @db.Decimal(10, 2)
   providerId     String?  // Identificador del proveedor
