@@ -45,6 +45,7 @@ export interface ImpuestosComprobante {
 }
 
 export interface ComprobanteData {
+  uuid: string;
   serie: string;
   folio: string;
   fecha: string;

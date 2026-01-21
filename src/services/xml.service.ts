@@ -39,7 +39,10 @@ export class XMLService {
         if(ivaG) totalIva = ivaG['$'].Importe;
     }
 
+    const uuid = result["cfdi:Comprobante"]["cfdi:Complemento"]?.[0]["tfd:TimbreFiscalDigital"]?.[0]['$'].UUID || '';
+
     const comprobanteData: ComprobanteData = {
+      uuid,
       serie: comprobante.Serie || "",
       folio: comprobante.Folio || "",
       fecha: comprobante.Fecha || "",
